@@ -61,15 +61,14 @@ getProps(donutBox);
 
 /*@param {Object}
 @return {Object}*/
+
+
 function delTaste(object){
-for(var prop in object){
 	delete object.taste;
-}
-return object;
+	return object;
 }
 
-delTaste(donutBox);
-console.log(donutBox);
+console.log(delTaste(donutBox));
 
 /*4. Create a function that will take in an object and will return all the values of the object in an array.*/
 
@@ -107,8 +106,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 function propNum(object){
 	var keyAmount = 0;
 	for(var key in object){
-		if(object.hasOwnProperty(key));
+		if(object.hasOwnProperty(key)){
 		keyAmount ++;
+		}
 	}
 	return keyAmount;
 }
