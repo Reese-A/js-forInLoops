@@ -76,6 +76,23 @@ console.log(donutBox);
 /*@param {Object}
 @return {Array}*/
 
+var legend = {
+	firstName: "Bruce",
+	lastName: "Lee",
+	birthPlace: "San Francisco, CA",
+	occupation: "Bad Ass",
+	hobbies: ["martial arts", "fitness", "dancing", "knitting", "coding"]
+};
+
+function getValues(object){
+	var values = [];
+	for(var prop in object){
+	values.push(object[prop]);
+}
+return values;
+}
+
+console.log(getValues(legend));
 
 
 /*5. Create a function that will take in an object and will return the number of properties (key -value pairs) in the object. Use the legend object above.
