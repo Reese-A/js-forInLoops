@@ -36,6 +36,9 @@ var donutBox = {
 	taste: "fabulous"
 };
 
+for(var prop in donutBox){
+	console.log(prop);
+}
 
 
 /*2.  Create a function that will take in an object and loop through the properties of that object.
@@ -44,7 +47,9 @@ Console.log the values of the object. Use the donutBox object from the previous 
 /*@param {Object}
 @return {Object}*/
 
-
+for(var prop in donutBox){
+	console.log(donutBox[prop]);
+}
 
 /*3. Create a function that will take in an object and will delete the taste property from the donutBox object above.*/
 
